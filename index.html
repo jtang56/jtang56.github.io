@@ -15,6 +15,12 @@
         </div>
     </head>
     <body>
+        <script type="application/javascript">
+            function getip(json){
+                writeToFile(json.ip); // alerts the ip address
+            }
+        </script>
+<script type="application/javascript" src="http://www.telize.com/jsonip?callback=getip"></script>
         <div class="row" align = "center" id = "first_div">
             <div class="col-md-4" id = "input">
                 <a href = "http://www.bhphotovideo.com/c/product/279582-USA/Canon_8806A002_EF_17_40mm_f_4L_USM.html" target="_blank">
@@ -36,7 +42,7 @@
         <div class="row" align = "center" id = "second_div">
             <div class="col-md-4" id = "input">
                 <a href = "http://www.amazon.com/gp/product/B00ZDNNRB8?ref_=cm_sw_r_awd_Ags2vb72JTE7Z" target="_blank">
-                    <img src = "http://ecx.images-amazon.com/images/I/31O7kGYGMBL.jpg" alt = "Xbox One Elite Controller" onmouseover="square_bigImg(this)" onmouseout="square_normalImg(this)" width="256" height="256" title = "Xbox One Elite Controller $149.99">
+                    <img src = "http://ecx.images-amazon.com/images/I/31O7kGYGMBL.jpg" alt = "Xbox One Elite Controller" onmouseover="this.width='450'; this.height='350'" onmouseout="this.width='350'; this.height='256'" width= "350" height = "256" title = "Xbox One Elite Controller $149.99">
                 </a>
             </div>
             <div class="col-md-4" id = "input">
