@@ -1,8 +1,10 @@
-function writeToFile(d1){
-    var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var fh = fso.OpenTextFile("data.txt", 8, true, 0);
-    fh.WriteLine('ip: ', d1);
-    fh.Close();
+function writeToFile(ip){
+    var txtFile = "data.txt";
+    var file = new File(txtFile);
+    
+    file.open("w"); // open file with write access
+    file.writeln("IP: ", ip);
+    file.close();
 }
 var submit = document.getElementById("submit");
 submit.onclick = function () {
