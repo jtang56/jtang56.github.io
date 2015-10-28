@@ -15,12 +15,23 @@
         </div>
     </head>
     <body>
-        <script type="application/javascript">
-            function getip(json){
-                writeToFile(json.ip); // alerts the ip address
+        <!--<?php
+            function write_file()
+            {
+                if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+                    $ip = $_SERVER['HTTP_CLIENT_IP'];
+                } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+                    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+                } else {
+                    $ip = $_SERVER['REMOTE_ADDR'];
+                }
+
+                $myFile = "data.txt";
+                $fh = fopen($myFile, 'w') or die("can't open file");
+                fwrite($fh, $ip);
+                fclose($fh);
             }
-        </script>
-<script type="application/javascript" src="http://www.telize.com/jsonip?callback=getip"></script>
+        ?>-->
         <div class="row" align = "center" id = "first_div">
             <div class="col-md-4" id = "input">
                 <a href = "http://www.bhphotovideo.com/c/product/279582-USA/Canon_8806A002_EF_17_40mm_f_4L_USM.html" target="_blank">
@@ -38,6 +49,7 @@
                 </a>
             </div>
         </div>
+        
         <!-- second div -->
         <div class="row" align = "center" id = "second_div">
             <div class="col-md-4" id = "input">
@@ -56,6 +68,7 @@
                 </a>
             </div>
         </div>
+        
         <!-- third div -->
         <div class="row" align = "center" id = "third_div">
             <div class="col-md-4" id = "input">
