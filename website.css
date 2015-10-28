@@ -1,0 +1,45 @@
+.jumbotron{
+    position: relative;
+    background: #000 url("background.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#main_head{
+    font-size: 50pt;
+    color: white;
+}
+
+#text{
+    font-size: 25pt;   
+}
+
+#first_div{
+    display:block;
+    width:100%;
+    height:500px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#second_div{
+    display:block;
+    width:100%;
+    height:500px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#third_div{
+    display:block;
+    width:100%;
+    height:500px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+div{
+    background-color: transparent;
+}
