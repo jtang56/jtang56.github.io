@@ -1,6 +1,6 @@
 .jumbotron{
     position: relative;
-    background: #000 url("background.jpg") center center;
+    background: #000 url("images/background.jpg") center center;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -40,6 +40,18 @@
     padding-bottom: 25px;
 }
 
-div{
-    background-color: transparent;
+#p_text{
+    font-size: 25px;   
+}
+
+#input_left{
+    padding-left: 20px;
+}
+
+#input_right{
+    padding-right: 20px;   
+}
+
+#pics{
+    padding-bottom: 15px;   
 }
